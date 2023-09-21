@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/column_row.dart';
+import 'package:hello_world/screen/expanded_flexible.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: ColumnRow(),
+    home: ExpandedFlexible(),
   ));
 }
 // Splash Screen

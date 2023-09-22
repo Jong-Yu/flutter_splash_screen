@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MeetDates extends StatefulWidget {
@@ -64,7 +65,27 @@ class _TopPart extends StatelessWidget {
             ],
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              // dialog
+              showCupertinoDialog(
+                  context: context,
+                  barrierDismissible: true,
+                  builder: (BuildContext context) {
+                    return Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Container(
+                        color: Colors.white,
+                        height: 300.0,
+                        child: CupertinoDatePicker(
+                          mode: CupertinoDatePickerMode.date,
+                          onDateTimeChanged: (DateTime date) {
+                            print(date);
+                          },
+                        ),
+                      ),
+                    );
+                  });
+            },
             icon: Icon(Icons.favorite),
             color: Colors.red,
             iconSize: 60.0,

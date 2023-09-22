@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/web_view.dart';
+import 'package:hello_world/screen/column_row.dart';
 
 void main() {
   // Flutter 프레임워크가
@@ -7,7 +7,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   runApp(MaterialApp(
-    home: WebViewScreen(),
+    home: ColumnRow(),
   ));
 }
 // Splash Screen

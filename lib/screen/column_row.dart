@@ -10,7 +10,7 @@ class ColumnRow extends StatelessWidget {
         bottom: false,
         child: Container(
           color: Colors.black,
-          child: Row(
+          child: Column(
             // Column - 주축: 세로, 반대축: 가로
             // Row - 주축: 가로, 반대축: 세로
             // CSS: Flex 와 비슷.
@@ -22,32 +22,72 @@ class ColumnRow extends StatelessWidget {
             // spaceEvenly - 위젯을 같은 간격으로 배치하지만 끝과 끝에도
             //               위젯이 아닌 빈 간격으로 시작한다.
             // spaceAround - spaceEvenly + 끝과 끝 간격은 1/2
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             // CrossAxisAlignment - 반대축 정렬
             // start - 시작
             // end - 끝
-            // center - 가운데
+            // center( Default ) - 가운데
             // stretch - 최대한으로 늘린다.
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             // MainAxisSize - 주축 크기
             // max - 최대
             // min - 최소
-            mainAxisSize: MainAxisSize.min,
+            mainAxisSize: MainAxisSize.max,
             children: [
-              Container(
-                color: Colors.red,
-                width: 50.0,
-                height: 50.0,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    color: Colors.red,
+                    width: 50.0,
+                    height: 50.0,
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    width: 50.0,
+                    height: 50.0,
+                  ),
+                  Container(
+                    color: Colors.yellow,
+                    width: 50.0,
+                    height: 50.0,
+                  ),
+                  Container(
+                    color: Colors.green,
+                    width: 50.0,
+                    height: 50.0,
+                  ),
+                ],
               ),
               Container(
                 color: Colors.orange,
                 width: 50.0,
                 height: 50.0,
               ),
-              Container(
-                color: Colors.yellow,
-                width: 50.0,
-                height: 50.0,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    color: Colors.red,
+                    width: 50.0,
+                    height: 50.0,
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    width: 50.0,
+                    height: 50.0,
+                  ),
+                  Container(
+                    color: Colors.yellow,
+                    width: 50.0,
+                    height: 50.0,
+                  ),
+                  Container(
+                    color: Colors.green,
+                    width: 50.0,
+                    height: 50.0,
+                  ),
+                ],
               ),
               Container(
                 color: Colors.green,

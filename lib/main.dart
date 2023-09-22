@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/image_carousel.dart';
+import 'package:hello_world/screen/date.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: ImageCarousel(),
-  ));
+  runApp(
+    MaterialApp(
+      home: MeetDates(),
+    ),
+  );
 }

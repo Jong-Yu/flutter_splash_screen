@@ -1,33 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/meet_date.dart';
+import 'package:hello_world/screen/web_view.dart';
 
 void main() {
+  // Flutter 프레임워크가
+  // 앱을 실행할 준비가 될떄까지 기다린다.
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(
     MaterialApp(
-      theme: ThemeData(
-        fontFamily: 'sonflower',
-        textTheme: TextTheme(
-          headlineLarge: TextStyle(
-            color: Colors.white,
-            fontFamily: 'parisienne',
-            fontSize: 80.0,
-          ),
-          headlineMedium: TextStyle(
-            color: Colors.white,
-            fontSize: 50.0,
-            fontWeight: FontWeight.w700,
-          ),
-          bodyMedium: TextStyle(
-            color: Colors.white,
-            fontSize: 30.0,
-          ),
-          bodySmall: TextStyle(
-            color: Colors.white,
-            fontSize: 20.0,
-          ),
-        ),
-      ),
-      home: MeetDates(),
+      home: WebViewScreen(),
     ),
   );
 }

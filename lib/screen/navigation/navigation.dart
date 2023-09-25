@@ -11,6 +11,24 @@ class NavigationWidget extends StatelessWidget {
       title: 'Navigation Widget',
       children: [
         ElevatedButton(
+          onPressed: () {
+            print(Navigator.of(context).canPop());
+          },
+          child: Text('Can Pop'),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.of(context).maybePop();
+          },
+          child: Text('Maybe Pop'),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          child: Text('Pop'),
+        ),
+        ElevatedButton(
           onPressed: () async {
             final result = await Navigator.of(context).push(
               MaterialPageRoute(

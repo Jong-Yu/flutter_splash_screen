@@ -10,12 +10,9 @@ class MapScreen extends StatefulWidget {
 
 class _MapScreenState extends State<MapScreen> {
   // latitude - 위도, logitude - 경도
-  static final LatLng compnayLatLng = LatLng(
-    37.5233273,
-    126.921252,
-  );
+  static final LatLng companyLatLng = LatLng(37.7749, -122.4194);
   static final CameraPosition initialPosition = CameraPosition(
-    target: compnayLatLng,
+    target: companyLatLng,
     zoom: 15,
   );
 

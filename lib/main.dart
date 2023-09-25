@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/video_project/video_home_screen.dart';
+import 'package:hello_world/screen/maps.dart';
 
 void main() {
   runApp(
     MaterialApp(
-      home: VideoHomeScreen(),
+      home: MapScreen(),
     ),
   );
 }

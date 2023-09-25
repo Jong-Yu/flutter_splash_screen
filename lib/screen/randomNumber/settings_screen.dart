@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/component/number_row.dart';
 
-import '../constant/color.dart';
+import '../../constant/color.dart';
 
 class SettingsScreen extends StatefulWidget {
   final int maxNumber;

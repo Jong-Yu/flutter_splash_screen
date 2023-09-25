@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:hello_world/component/number_row.dart';
 import 'package:hello_world/constant/color.dart';
-import 'package:hello_world/screen/settings_screen.dart';
+import 'package:hello_world/screen/randomNumber/settings_screen.dart';
 
 class RandomNumber extends StatefulWidget {
   const RandomNumber({super.key});

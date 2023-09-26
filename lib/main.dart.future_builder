@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/screen/stream_builder.dart';
+import 'package:hello_world/screen/future_builder.dart';
 
 void main() {
   runApp(
     MaterialApp(
-      home: StreamBuilderScreen(),
+      home: FutureBuilderScreen(),
     ),
   );
 }
